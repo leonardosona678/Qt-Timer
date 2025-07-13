@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     // Connessioni pulsanti
-
+    //simula commit
     connect(ui->bottoneStart, &QPushButton::clicked, this, &MainWindow::avviaTimer);
     connect(ui->bottoneStop, &QPushButton::clicked, this, &MainWindow::fermaTimer);
     connect(ui->bottoneReset, &QPushButton::clicked, this, &MainWindow::resetTimer);
