@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\Apptimer.dir/objects.a
+C:\mingw-w64\mingw64\bin\ar.exe qc CMakeFiles\Apptimer.dir/objects.a @CMakeFiles\Apptimer.dir\objects1.rsp
+C:\mingw-w64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Apptimer.dir/objects.a -Wl,--no-whole-archive -o Apptimer.exe -Wl,--out-implib,libApptimer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Apptimer.dir\linkLibs.rsp

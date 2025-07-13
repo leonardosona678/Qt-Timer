@@ -1,0 +1,3 @@
+C:/Users/leona/Desktop/Apptimer/cmake-build-debug/CMakeFiles/Apptimer.dir
+C:/Users/leona/Desktop/Apptimer/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/leona/Desktop/Apptimer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
