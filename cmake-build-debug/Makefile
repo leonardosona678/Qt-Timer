@@ -116,96 +116,74 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Apptimer
+# Target rules for targets named AppTimer
 
 # Build rule for target.
-Apptimer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Apptimer
-.PHONY : Apptimer
+AppTimer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AppTimer
+.PHONY : AppTimer
 
 # fast build rule for target.
-Apptimer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/build
-.PHONY : Apptimer/fast
+AppTimer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/build
+.PHONY : AppTimer/fast
 
-Data.obj: Data.cpp.obj
-.PHONY : Data.obj
+#=============================================================================
+# Target rules for targets named AppTimer_autogen_timestamp_deps
 
-# target to build an object file
-Data.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/Data.cpp.obj
-.PHONY : Data.cpp.obj
+# Build rule for target.
+AppTimer_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AppTimer_autogen_timestamp_deps
+.PHONY : AppTimer_autogen_timestamp_deps
 
-Data.i: Data.cpp.i
-.PHONY : Data.i
+# fast build rule for target.
+AppTimer_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer_autogen_timestamp_deps.dir\build.make CMakeFiles/AppTimer_autogen_timestamp_deps.dir/build
+.PHONY : AppTimer_autogen_timestamp_deps/fast
 
-# target to preprocess a source file
-Data.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/Data.cpp.i
-.PHONY : Data.cpp.i
+#=============================================================================
+# Target rules for targets named AppTimer_autogen
 
-Data.s: Data.cpp.s
-.PHONY : Data.s
+# Build rule for target.
+AppTimer_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AppTimer_autogen
+.PHONY : AppTimer_autogen
 
-# target to generate assembly for a file
-Data.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/Data.cpp.s
-.PHONY : Data.cpp.s
+# fast build rule for target.
+AppTimer_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer_autogen.dir\build.make CMakeFiles/AppTimer_autogen.dir/build
+.PHONY : AppTimer_autogen/fast
 
-Tempo.obj: Tempo.cpp.obj
-.PHONY : Tempo.obj
-
-# target to build an object file
-Tempo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/Tempo.cpp.obj
-.PHONY : Tempo.cpp.obj
-
-Tempo.i: Tempo.cpp.i
-.PHONY : Tempo.i
-
-# target to preprocess a source file
-Tempo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/Tempo.cpp.i
-.PHONY : Tempo.cpp.i
-
-Tempo.s: Tempo.cpp.s
-.PHONY : Tempo.s
-
-# target to generate assembly for a file
-Tempo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/Tempo.cpp.s
-.PHONY : Tempo.cpp.s
-
-Timer.obj: Timer.cpp.obj
-.PHONY : Timer.obj
+AppTimer_autogen/mocs_compilation.obj: AppTimer_autogen/mocs_compilation.cpp.obj
+.PHONY : AppTimer_autogen/mocs_compilation.obj
 
 # target to build an object file
-Timer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/Timer.cpp.obj
-.PHONY : Timer.cpp.obj
+AppTimer_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/AppTimer_autogen/mocs_compilation.cpp.obj
+.PHONY : AppTimer_autogen/mocs_compilation.cpp.obj
 
-Timer.i: Timer.cpp.i
-.PHONY : Timer.i
+AppTimer_autogen/mocs_compilation.i: AppTimer_autogen/mocs_compilation.cpp.i
+.PHONY : AppTimer_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-Timer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/Timer.cpp.i
-.PHONY : Timer.cpp.i
+AppTimer_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/AppTimer_autogen/mocs_compilation.cpp.i
+.PHONY : AppTimer_autogen/mocs_compilation.cpp.i
 
-Timer.s: Timer.cpp.s
-.PHONY : Timer.s
+AppTimer_autogen/mocs_compilation.s: AppTimer_autogen/mocs_compilation.cpp.s
+.PHONY : AppTimer_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-Timer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/Timer.cpp.s
-.PHONY : Timer.cpp.s
+AppTimer_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/AppTimer_autogen/mocs_compilation.cpp.s
+.PHONY : AppTimer_autogen/mocs_compilation.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -213,7 +191,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -221,8 +199,104 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Apptimer.dir\build.make CMakeFiles/Apptimer.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/Data.obj: src/Data.cpp.obj
+.PHONY : src/Data.obj
+
+# target to build an object file
+src/Data.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Data.cpp.obj
+.PHONY : src/Data.cpp.obj
+
+src/Data.i: src/Data.cpp.i
+.PHONY : src/Data.i
+
+# target to preprocess a source file
+src/Data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Data.cpp.i
+.PHONY : src/Data.cpp.i
+
+src/Data.s: src/Data.cpp.s
+.PHONY : src/Data.s
+
+# target to generate assembly for a file
+src/Data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Data.cpp.s
+.PHONY : src/Data.cpp.s
+
+src/MainWindow.obj: src/MainWindow.cpp.obj
+.PHONY : src/MainWindow.obj
+
+# target to build an object file
+src/MainWindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/MainWindow.cpp.obj
+.PHONY : src/MainWindow.cpp.obj
+
+src/MainWindow.i: src/MainWindow.cpp.i
+.PHONY : src/MainWindow.i
+
+# target to preprocess a source file
+src/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/MainWindow.cpp.i
+.PHONY : src/MainWindow.cpp.i
+
+src/MainWindow.s: src/MainWindow.cpp.s
+.PHONY : src/MainWindow.s
+
+# target to generate assembly for a file
+src/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/MainWindow.cpp.s
+.PHONY : src/MainWindow.cpp.s
+
+src/Tempo.obj: src/Tempo.cpp.obj
+.PHONY : src/Tempo.obj
+
+# target to build an object file
+src/Tempo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Tempo.cpp.obj
+.PHONY : src/Tempo.cpp.obj
+
+src/Tempo.i: src/Tempo.cpp.i
+.PHONY : src/Tempo.i
+
+# target to preprocess a source file
+src/Tempo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Tempo.cpp.i
+.PHONY : src/Tempo.cpp.i
+
+src/Tempo.s: src/Tempo.cpp.s
+.PHONY : src/Tempo.s
+
+# target to generate assembly for a file
+src/Tempo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Tempo.cpp.s
+.PHONY : src/Tempo.cpp.s
+
+src/Timer.obj: src/Timer.cpp.obj
+.PHONY : src/Timer.obj
+
+# target to build an object file
+src/Timer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Timer.cpp.obj
+.PHONY : src/Timer.cpp.obj
+
+src/Timer.i: src/Timer.cpp.i
+.PHONY : src/Timer.i
+
+# target to preprocess a source file
+src/Timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Timer.cpp.i
+.PHONY : src/Timer.cpp.i
+
+src/Timer.s: src/Timer.cpp.s
+.PHONY : src/Timer.s
+
+# target to generate assembly for a file
+src/Timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Timer.cpp.s
+.PHONY : src/Timer.cpp.s
 
 # Help Target
 help:
@@ -232,19 +306,27 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Apptimer
-	@echo ... Data.obj
-	@echo ... Data.i
-	@echo ... Data.s
-	@echo ... Tempo.obj
-	@echo ... Tempo.i
-	@echo ... Tempo.s
-	@echo ... Timer.obj
-	@echo ... Timer.i
-	@echo ... Timer.s
+	@echo ... AppTimer_autogen
+	@echo ... AppTimer_autogen_timestamp_deps
+	@echo ... AppTimer
+	@echo ... AppTimer_autogen/mocs_compilation.obj
+	@echo ... AppTimer_autogen/mocs_compilation.i
+	@echo ... AppTimer_autogen/mocs_compilation.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Data.obj
+	@echo ... src/Data.i
+	@echo ... src/Data.s
+	@echo ... src/MainWindow.obj
+	@echo ... src/MainWindow.i
+	@echo ... src/MainWindow.s
+	@echo ... src/Tempo.obj
+	@echo ... src/Tempo.i
+	@echo ... src/Tempo.s
+	@echo ... src/Timer.obj
+	@echo ... src/Timer.i
+	@echo ... src/Timer.s
 .PHONY : help
 
 

@@ -23,7 +23,7 @@ public:
     bool isRunning() const;
     Tempo getTempo() const;
     std::string getTempoinstringaformato1();  // Formattazione testuale
-    //TODO imposta anche i get tempo per gli altri formati stringa
+    std::string getTempoinstringaformato2();
 };
 
 #endif // TIMER_H

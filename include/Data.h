@@ -17,18 +17,19 @@ public:
     Data(int g, int m, int a);
 
     // Getter
-    int Data::getGiorno() const { return giorno; }
-    int Data::getMese() const { return mese; }
-    int Data::getAnno() const { return anno; }
+    int getGiorno() const { return giorno; }
+    int getMese() const { return mese; }
+    int getAnno() const { return anno; }
 
     // Setter
-    void Data::setGiorno(int g) { this->giorno = g; }
-    void Data::setMese(int m) { this->mese = m; }
-    void Data::setAnno(int a) {this-> anno = a; }
+    void setGiorno(int g) { this->giorno = g; }
+    void setMese(int m) { this->mese = m; }
+    void setAnno(int a) {this-> anno = a; }
 
 
     // Utility
     std::string CreaStringa() const;
+    std::string CreaStringaFormatoAmericano() const;
     bool isValid() const;
 
 private:

@@ -8,7 +8,7 @@
 #include <stdexcept>
 
 // Costruttore di default
-Data::Data() : giorno(1), mese(1), anno(1970) {}
+Data::Data() : giorno(1), mese(1), anno(1900) {}
 Data::Data(int g, int m, int a) : giorno(g), mese(m), anno(a) {
     if (!isValid()) {
         throw std::invalid_argument("Data non valida: " + std::to_string(g) + "/" + std::to_string(m) + "/" + std::to_string(a));
@@ -18,9 +18,21 @@ Data::Data(int g, int m, int a) : giorno(g), mese(m), anno(a) {
 
 // Formattazione "gg/mm/aaaa"
 std::string Data::CreaStringa() const {
-    return std::to_string(giorno) + "/" + std::to_string(mese) + "/" + std::to_string(anno);
+    if(isValid()) //rimetto il controllo, se per qualche motivo avessi immesso dei valori non corretti dai metodi setter
+     return std::to_string(giorno) + "/" + std::to_string(mese) + "/" + std::to_string(anno);
+    else
+        throw std::invalid_argument("Data non valida: " + std::to_string(giorno) + "/" + std::to_string(mese) + "/" + std::to_string(anno));
+
 }
-//TODO mancano i vari formati di visualizzazione
+
+std::string Data::CreaStringaFormatoAmericano() const {
+    if(isValid())
+        return std::to_string(mese) + "/" + std::to_string(giorno)+"/" + std::to_string(anno);
+    else
+        throw std::invalid_argument("Data non valida: " + std::to_string(mese) + "/" + std::to_string(giorno) + "/" + std::to_string(anno));
+}
+
+
 
 // Controllo validità data
 bool Data::isValid() const {

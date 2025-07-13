@@ -33,3 +33,7 @@ Tempo Timer::getTempo() const {
 std::string Timer::getTempoinstringaformato1() {
     return tempo.creastringa();
 }
+
+std::string Timer::getTempoinstringaformato2() {
+    return tempo.creastringaformatoesteso();
+}

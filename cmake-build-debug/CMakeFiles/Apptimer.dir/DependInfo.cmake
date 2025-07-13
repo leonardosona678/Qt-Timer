@@ -8,10 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/leona/Desktop/Apptimer/Data.cpp" "CMakeFiles/Apptimer.dir/Data.cpp.obj" "gcc" "CMakeFiles/Apptimer.dir/Data.cpp.obj.d"
-  "C:/Users/leona/Desktop/Apptimer/Tempo.cpp" "CMakeFiles/Apptimer.dir/Tempo.cpp.obj" "gcc" "CMakeFiles/Apptimer.dir/Tempo.cpp.obj.d"
-  "C:/Users/leona/Desktop/Apptimer/Timer.cpp" "CMakeFiles/Apptimer.dir/Timer.cpp.obj" "gcc" "CMakeFiles/Apptimer.dir/Timer.cpp.obj.d"
-  "C:/Users/leona/Desktop/Apptimer/main.cpp" "CMakeFiles/Apptimer.dir/main.cpp.obj" "gcc" "CMakeFiles/Apptimer.dir/main.cpp.obj.d"
+  "" "AppTimer_autogen/timestamp" "custom" "AppTimer_autogen/deps"
+  "C:/Users/leona/Desktop/Apptimer/cmake-build-debug/AppTimer_autogen/mocs_compilation.cpp" "CMakeFiles/AppTimer.dir/AppTimer_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/AppTimer.dir/AppTimer_autogen/mocs_compilation.cpp.obj.d"
+  "C:/Users/leona/Desktop/Apptimer/main.cpp" "CMakeFiles/AppTimer.dir/main.cpp.obj" "gcc" "CMakeFiles/AppTimer.dir/main.cpp.obj.d"
+  "C:/Users/leona/Desktop/Apptimer/src/Data.cpp" "CMakeFiles/AppTimer.dir/src/Data.cpp.obj" "gcc" "CMakeFiles/AppTimer.dir/src/Data.cpp.obj.d"
+  "C:/Users/leona/Desktop/Apptimer/src/MainWindow.cpp" "CMakeFiles/AppTimer.dir/src/MainWindow.cpp.obj" "gcc" "CMakeFiles/AppTimer.dir/src/MainWindow.cpp.obj.d"
+  "C:/Users/leona/Desktop/Apptimer/src/Tempo.cpp" "CMakeFiles/AppTimer.dir/src/Tempo.cpp.obj" "gcc" "CMakeFiles/AppTimer.dir/src/Tempo.cpp.obj.d"
+  "C:/Users/leona/Desktop/Apptimer/src/Timer.cpp" "CMakeFiles/AppTimer.dir/src/Timer.cpp.obj" "gcc" "CMakeFiles/AppTimer.dir/src/Timer.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,0 +1,1 @@
+-I"C:/Users/leona/Desktop/Apptimer/cmake-build-debug/AppTimer_autogen/include" -IC:/Users/leona/Desktop/Apptimer/include -IC:/Users/leona/Desktop/Apptimer/ui -isystem C:/Qt/6.9.1/mingw_64/include/QtCore -isystem C:/Qt/6.9.1/mingw_64/include -isystem "C:/Qt/6.9.1/mingw_64/mkspecs/win32-g++" -isystem C:/Qt/6.9.1/mingw_64/include/QtGui -isystem C:/Qt/6.9.1/mingw_64/include/QtWidgets

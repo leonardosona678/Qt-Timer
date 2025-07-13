@@ -1,3 +1,5 @@
-C:/Users/leona/Desktop/Apptimer/cmake-build-debug/CMakeFiles/Apptimer.dir
+C:/Users/leona/Desktop/Apptimer/cmake-build-debug/CMakeFiles/AppTimer.dir
 C:/Users/leona/Desktop/Apptimer/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/leona/Desktop/Apptimer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/leona/Desktop/Apptimer/cmake-build-debug/CMakeFiles/AppTimer_autogen_timestamp_deps.dir
+C:/Users/leona/Desktop/Apptimer/cmake-build-debug/CMakeFiles/AppTimer_autogen.dir

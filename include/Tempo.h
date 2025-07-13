@@ -4,6 +4,7 @@
 
 #ifndef TEMPO_H
 #define TEMPO_H
+#include <stdexcept>
 #include <string>
 
 
@@ -41,25 +42,41 @@ public:
     }
 
     void set_ore(int ore) {
-        this->ore = ore;
+        if(ore>=0)
+          this->ore = ore;
+        else
+            throw std::invalid_argument("Ore valore invalido");
     }
 
     void set_minuti( int minuti) {
-        this->minuti = minuti;
+        if(minuti>=0)
+         this->minuti = minuti;
+        else
+            throw std::invalid_argument("valore Minuti invalido");
     }
 
     void set_secondi( int secondi) {
-        this->secondi = secondi;
+        if(secondi>=0)
+          this->secondi = secondi;
+        else
+            throw std::invalid_argument("valore Secondi invalido");
     }
 
     void set_decimo_di_secondo(int decimo_di_secondo) {
-        this->DecimoDiSecondo = decimo_di_secondo;
+        if(decimo_di_secondo>=0)
+          this->DecimoDiSecondo = decimo_di_secondo;
+        else
+            throw std::invalid_argument("valore DecimoDiSecondo invalido");
     }
 
     void set_centesimo_di_secondo( int centesimo_di_secondo) {
-        this->CentesimoDiSecondo = centesimo_di_secondo;
+        if(centesimo_di_secondo>=0)
+          this->CentesimoDiSecondo = centesimo_di_secondo;
+        else
+            throw std::invalid_argument("valore CentesimoDiSecond invalido");
     }
     std::string creastringa();
+    std::string creastringaformatoesteso();
     void aggiustavalori();
 };
 
