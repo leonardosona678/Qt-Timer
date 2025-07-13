@@ -23,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->NascondiData, &QPushButton::clicked, this, &MainWindow::nascondiData);
 
     // Timer Qt per aggiornare la GUI
+    //simula commit
     connect(qtimer, &QTimer::timeout, this, &MainWindow::aggiornaDisplay);
     qtimer->start(10); // ogni 10 ms → 1 centesimo
 }
