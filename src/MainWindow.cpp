@@ -48,7 +48,7 @@ void MainWindow::resetTimer() {
     timerLogico.reset();
     aggiornaDisplay();
 }
-
+//simulo commit
 void MainWindow::aggiornaDisplay() {
     timerLogico.tick();
     ui->labelTempo->setText(QString::fromStdString(timerLogico.getTempoinstringaformato2()));
