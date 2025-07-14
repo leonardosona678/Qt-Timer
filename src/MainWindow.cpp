@@ -44,9 +44,10 @@ void MainWindow::fermaTimer() {
 }
 
 void MainWindow::resetTimer() {
-    //se volessi che il reset anche senza pigiare stop prima azzeri il tempo e lo stoppi, dovrei aggiungere:
-    //timerLogico.fine();
-    //qtimer->stop();
+    //se volessi che il reset anche senza pigiare stop faccia ripartire il tempo da zero(senza però bloccarsi),
+    //dovrei levare da questo metodo "qtimer->stop()" e levare l'impostazione "running=false"
+    //nel metodo reset di Timer
+    qtimer->stop();
     timerLogico.reset();
     aggiornaDisplay();
 }

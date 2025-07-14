@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\TestSuite.dir/objects.a
+C:\mingw-w64\mingw64\bin\ar.exe qc CMakeFiles\TestSuite.dir/objects.a @CMakeFiles\TestSuite.dir\objects1.rsp
+C:\mingw-w64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\TestSuite.dir/objects.a -Wl,--no-whole-archive -o TestSuite.exe -Wl,--out-implib,libTestSuite.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TestSuite.dir\linkLibs.rsp

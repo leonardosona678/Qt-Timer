@@ -64,6 +64,16 @@ CMAKE_BINARY_DIR = C:\Users\leona\Desktop\Apptimer\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -83,6 +93,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -129,6 +184,19 @@ AppTimer/fast:
 .PHONY : AppTimer/fast
 
 #=============================================================================
+# Target rules for targets named TestSuite
+
+# Build rule for target.
+TestSuite: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestSuite
+.PHONY : TestSuite
+
+# fast build rule for target.
+TestSuite/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/build
+.PHONY : TestSuite/fast
+
+#=============================================================================
 # Target rules for targets named AppTimer_autogen_timestamp_deps
 
 # Build rule for target.
@@ -154,6 +222,188 @@ AppTimer_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer_autogen.dir\build.make CMakeFiles/AppTimer_autogen.dir/build
 .PHONY : AppTimer_autogen/fast
 
+#=============================================================================
+# Target rules for targets named TestSuite_autogen_timestamp_deps
+
+# Build rule for target.
+TestSuite_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestSuite_autogen_timestamp_deps
+.PHONY : TestSuite_autogen_timestamp_deps
+
+# fast build rule for target.
+TestSuite_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite_autogen_timestamp_deps.dir\build.make CMakeFiles/TestSuite_autogen_timestamp_deps.dir/build
+.PHONY : TestSuite_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named TestSuite_autogen
+
+# Build rule for target.
+TestSuite_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestSuite_autogen
+.PHONY : TestSuite_autogen
+
+# fast build rule for target.
+TestSuite_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite_autogen.dir\build.make CMakeFiles/TestSuite_autogen.dir/build
+.PHONY : TestSuite_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googlemock\CMakeFiles\gmock.dir\build.make external/gtest/googletest-main/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googlemock\CMakeFiles\gmock_main.dir\build.make external/gtest/googletest-main/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock_autogen_timestamp_deps
+
+# Build rule for target.
+gmock_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_autogen_timestamp_deps
+.PHONY : gmock_autogen_timestamp_deps
+
+# fast build rule for target.
+gmock_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googlemock\CMakeFiles\gmock_autogen_timestamp_deps.dir\build.make external/gtest/googletest-main/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/build
+.PHONY : gmock_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named gmock_autogen
+
+# Build rule for target.
+gmock_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_autogen
+.PHONY : gmock_autogen
+
+# fast build rule for target.
+gmock_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googlemock\CMakeFiles\gmock_autogen.dir\build.make external/gtest/googletest-main/googlemock/CMakeFiles/gmock_autogen.dir/build
+.PHONY : gmock_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main_autogen_timestamp_deps
+
+# Build rule for target.
+gmock_main_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main_autogen_timestamp_deps
+.PHONY : gmock_main_autogen_timestamp_deps
+
+# fast build rule for target.
+gmock_main_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googlemock\CMakeFiles\gmock_main_autogen_timestamp_deps.dir\build.make external/gtest/googletest-main/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/build
+.PHONY : gmock_main_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main_autogen
+
+# Build rule for target.
+gmock_main_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main_autogen
+.PHONY : gmock_main_autogen
+
+# fast build rule for target.
+gmock_main_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googlemock\CMakeFiles\gmock_main_autogen.dir\build.make external/gtest/googletest-main/googlemock/CMakeFiles/gmock_main_autogen.dir/build
+.PHONY : gmock_main_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googletest\CMakeFiles\gtest.dir\build.make external/gtest/googletest-main/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make external/gtest/googletest-main/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest_autogen_timestamp_deps
+
+# Build rule for target.
+gtest_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_autogen_timestamp_deps
+.PHONY : gtest_autogen_timestamp_deps
+
+# fast build rule for target.
+gtest_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googletest\CMakeFiles\gtest_autogen_timestamp_deps.dir\build.make external/gtest/googletest-main/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/build
+.PHONY : gtest_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named gtest_autogen
+
+# Build rule for target.
+gtest_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_autogen
+.PHONY : gtest_autogen
+
+# fast build rule for target.
+gtest_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googletest\CMakeFiles\gtest_autogen.dir\build.make external/gtest/googletest-main/googletest/CMakeFiles/gtest_autogen.dir/build
+.PHONY : gtest_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main_autogen_timestamp_deps
+
+# Build rule for target.
+gtest_main_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main_autogen_timestamp_deps
+.PHONY : gtest_main_autogen_timestamp_deps
+
+# fast build rule for target.
+gtest_main_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googletest\CMakeFiles\gtest_main_autogen_timestamp_deps.dir\build.make external/gtest/googletest-main/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/build
+.PHONY : gtest_main_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main_autogen
+
+# Build rule for target.
+gtest_main_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main_autogen
+.PHONY : gtest_main_autogen
+
+# fast build rule for target.
+gtest_main_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f external\gtest\googletest-main\googletest\CMakeFiles\gtest_main_autogen.dir\build.make external/gtest/googletest-main/googletest/CMakeFiles/gtest_main_autogen.dir/build
+.PHONY : gtest_main_autogen/fast
+
 AppTimer_autogen/mocs_compilation.obj: AppTimer_autogen/mocs_compilation.cpp.obj
 .PHONY : AppTimer_autogen/mocs_compilation.obj
 
@@ -177,6 +427,30 @@ AppTimer_autogen/mocs_compilation.s: AppTimer_autogen/mocs_compilation.cpp.s
 AppTimer_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/AppTimer_autogen/mocs_compilation.cpp.s
 .PHONY : AppTimer_autogen/mocs_compilation.cpp.s
+
+TestSuite_autogen/mocs_compilation.obj: TestSuite_autogen/mocs_compilation.cpp.obj
+.PHONY : TestSuite_autogen/mocs_compilation.obj
+
+# target to build an object file
+TestSuite_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/TestSuite_autogen/mocs_compilation.cpp.obj
+.PHONY : TestSuite_autogen/mocs_compilation.cpp.obj
+
+TestSuite_autogen/mocs_compilation.i: TestSuite_autogen/mocs_compilation.cpp.i
+.PHONY : TestSuite_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+TestSuite_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/TestSuite_autogen/mocs_compilation.cpp.i
+.PHONY : TestSuite_autogen/mocs_compilation.cpp.i
+
+TestSuite_autogen/mocs_compilation.s: TestSuite_autogen/mocs_compilation.cpp.s
+.PHONY : TestSuite_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+TestSuite_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/TestSuite_autogen/mocs_compilation.cpp.s
+.PHONY : TestSuite_autogen/mocs_compilation.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -208,6 +482,7 @@ src/Data.obj: src/Data.cpp.obj
 # target to build an object file
 src/Data.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Data.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/src/Data.cpp.obj
 .PHONY : src/Data.cpp.obj
 
 src/Data.i: src/Data.cpp.i
@@ -216,6 +491,7 @@ src/Data.i: src/Data.cpp.i
 # target to preprocess a source file
 src/Data.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Data.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/src/Data.cpp.i
 .PHONY : src/Data.cpp.i
 
 src/Data.s: src/Data.cpp.s
@@ -224,6 +500,7 @@ src/Data.s: src/Data.cpp.s
 # target to generate assembly for a file
 src/Data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Data.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/src/Data.cpp.s
 .PHONY : src/Data.cpp.s
 
 src/MainWindow.obj: src/MainWindow.cpp.obj
@@ -256,6 +533,7 @@ src/Tempo.obj: src/Tempo.cpp.obj
 # target to build an object file
 src/Tempo.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Tempo.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/src/Tempo.cpp.obj
 .PHONY : src/Tempo.cpp.obj
 
 src/Tempo.i: src/Tempo.cpp.i
@@ -264,6 +542,7 @@ src/Tempo.i: src/Tempo.cpp.i
 # target to preprocess a source file
 src/Tempo.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Tempo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/src/Tempo.cpp.i
 .PHONY : src/Tempo.cpp.i
 
 src/Tempo.s: src/Tempo.cpp.s
@@ -272,6 +551,7 @@ src/Tempo.s: src/Tempo.cpp.s
 # target to generate assembly for a file
 src/Tempo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Tempo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/src/Tempo.cpp.s
 .PHONY : src/Tempo.cpp.s
 
 src/Timer.obj: src/Timer.cpp.obj
@@ -280,6 +560,7 @@ src/Timer.obj: src/Timer.cpp.obj
 # target to build an object file
 src/Timer.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Timer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/src/Timer.cpp.obj
 .PHONY : src/Timer.cpp.obj
 
 src/Timer.i: src/Timer.cpp.i
@@ -288,6 +569,7 @@ src/Timer.i: src/Timer.cpp.i
 # target to preprocess a source file
 src/Timer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Timer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/src/Timer.cpp.i
 .PHONY : src/Timer.cpp.i
 
 src/Timer.s: src/Timer.cpp.s
@@ -296,7 +578,80 @@ src/Timer.s: src/Timer.cpp.s
 # target to generate assembly for a file
 src/Timer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AppTimer.dir\build.make CMakeFiles/AppTimer.dir/src/Timer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/src/Timer.cpp.s
 .PHONY : src/Timer.cpp.s
+
+tests/TestData.obj: tests/TestData.cpp.obj
+.PHONY : tests/TestData.obj
+
+# target to build an object file
+tests/TestData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/tests/TestData.cpp.obj
+.PHONY : tests/TestData.cpp.obj
+
+tests/TestData.i: tests/TestData.cpp.i
+.PHONY : tests/TestData.i
+
+# target to preprocess a source file
+tests/TestData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/tests/TestData.cpp.i
+.PHONY : tests/TestData.cpp.i
+
+tests/TestData.s: tests/TestData.cpp.s
+.PHONY : tests/TestData.s
+
+# target to generate assembly for a file
+tests/TestData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/tests/TestData.cpp.s
+.PHONY : tests/TestData.cpp.s
+
+tests/TestTempo.obj: tests/TestTempo.cpp.obj
+.PHONY : tests/TestTempo.obj
+
+# target to build an object file
+tests/TestTempo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/tests/TestTempo.cpp.obj
+.PHONY : tests/TestTempo.cpp.obj
+
+tests/TestTempo.i: tests/TestTempo.cpp.i
+.PHONY : tests/TestTempo.i
+
+# target to preprocess a source file
+tests/TestTempo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/tests/TestTempo.cpp.i
+.PHONY : tests/TestTempo.cpp.i
+
+tests/TestTempo.s: tests/TestTempo.cpp.s
+.PHONY : tests/TestTempo.s
+
+# target to generate assembly for a file
+tests/TestTempo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/tests/TestTempo.cpp.s
+.PHONY : tests/TestTempo.cpp.s
+
+tests/TestTimer.obj: tests/TestTimer.cpp.obj
+.PHONY : tests/TestTimer.obj
+
+# target to build an object file
+tests/TestTimer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/tests/TestTimer.cpp.obj
+.PHONY : tests/TestTimer.cpp.obj
+
+tests/TestTimer.i: tests/TestTimer.cpp.i
+.PHONY : tests/TestTimer.i
+
+# target to preprocess a source file
+tests/TestTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/tests/TestTimer.cpp.i
+.PHONY : tests/TestTimer.cpp.i
+
+tests/TestTimer.s: tests/TestTimer.cpp.s
+.PHONY : tests/TestTimer.s
+
+# target to generate assembly for a file
+tests/TestTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestSuite.dir\build.make CMakeFiles/TestSuite.dir/tests/TestTimer.cpp.s
+.PHONY : tests/TestTimer.cpp.s
 
 # Help Target
 help:
@@ -305,13 +660,36 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... test
 	@echo ... AppTimer_autogen
 	@echo ... AppTimer_autogen_timestamp_deps
+	@echo ... TestSuite_autogen
+	@echo ... TestSuite_autogen_timestamp_deps
+	@echo ... gmock_autogen
+	@echo ... gmock_autogen_timestamp_deps
+	@echo ... gmock_main_autogen
+	@echo ... gmock_main_autogen_timestamp_deps
+	@echo ... gtest_autogen
+	@echo ... gtest_autogen_timestamp_deps
+	@echo ... gtest_main_autogen
+	@echo ... gtest_main_autogen_timestamp_deps
 	@echo ... AppTimer
+	@echo ... TestSuite
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
 	@echo ... AppTimer_autogen/mocs_compilation.obj
 	@echo ... AppTimer_autogen/mocs_compilation.i
 	@echo ... AppTimer_autogen/mocs_compilation.s
+	@echo ... TestSuite_autogen/mocs_compilation.obj
+	@echo ... TestSuite_autogen/mocs_compilation.i
+	@echo ... TestSuite_autogen/mocs_compilation.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -327,6 +705,15 @@ help:
 	@echo ... src/Timer.obj
 	@echo ... src/Timer.i
 	@echo ... src/Timer.s
+	@echo ... tests/TestData.obj
+	@echo ... tests/TestData.i
+	@echo ... tests/TestData.s
+	@echo ... tests/TestTempo.obj
+	@echo ... tests/TestTempo.i
+	@echo ... tests/TestTempo.s
+	@echo ... tests/TestTimer.obj
+	@echo ... tests/TestTimer.i
+	@echo ... tests/TestTimer.s
 .PHONY : help
 
 

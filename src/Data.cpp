@@ -21,7 +21,7 @@ std::string Data::CreaStringa() const {
     if(isValid()) //rimetto il controllo, se per qualche motivo avessi immesso dei valori non corretti dai metodi setter
      return std::to_string(giorno) + "/" + std::to_string(mese) + "/" + std::to_string(anno);
     else
-        throw std::invalid_argument("Data non valida: " + std::to_string(giorno) + "/" + std::to_string(mese) + "/" + std::to_string(anno));
+        throw std::invalid_argument("Data non valida: ");
 
 }
 
@@ -29,7 +29,7 @@ std::string Data::CreaStringaFormatoAmericano() const {
     if(isValid())
         return std::to_string(mese) + "/" + std::to_string(giorno)+"/" + std::to_string(anno);
     else
-        throw std::invalid_argument("Data non valida: " + std::to_string(mese) + "/" + std::to_string(giorno) + "/" + std::to_string(anno));
+        throw std::invalid_argument("Data non valida: ");
 }
 
 

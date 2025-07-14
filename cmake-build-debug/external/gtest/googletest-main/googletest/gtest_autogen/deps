@@ -1,0 +1,11 @@
+gtest_autogen/timestamp: \
+	C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in \
+	C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake \
+	C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake \
+	C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googletest/CMakeLists.txt \
+	C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googletest/cmake/Config.cmake.in \
+	C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googletest/cmake/gtest.pc.in \
+	C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googletest/cmake/gtest_main.pc.in \
+	C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googletest/cmake/internal_utils.cmake \
+	C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googletest/src/gtest-all.cc \
+	C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/cmake/win/x64/bin/cmake.exe

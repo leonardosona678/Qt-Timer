@@ -12,6 +12,7 @@ void Timer::fine() {
 
 void Timer::reset() {
     tempo = Tempo();  // Ricrea un tempo vuoto
+    running = false;
 }
 
 void Timer::tick() {
