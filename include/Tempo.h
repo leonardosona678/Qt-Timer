@@ -16,7 +16,7 @@ private:
     int DecimoDiSecondo;
     int CentesimoDiSecondo;
 public:
-    Tempo(): ore(0), minuti(0), secondi(0), DecimoDiSecondo(0), CentesimoDiSecondo(0) {}
+    Tempo(): ore(0), minuti(0), secondi(0), DecimoDiSecondo(0), CentesimoDiSecondo(0) {} //costruttore a tempo "vuoto", di default
     Tempo(int o, int m, int sec, int d, int c):ore(o), minuti(m), secondi(sec), DecimoDiSecondo(d), CentesimoDiSecondo(c) {
         aggiustavalori();
     }

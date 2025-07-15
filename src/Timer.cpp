@@ -12,14 +12,14 @@ void Timer::fine() {
 
 void Timer::reset() {
     tempo = Tempo();  // Ricrea un tempo vuoto
-    running = false;
+    running = false; //il reset stoppa il tempo(oltre a riazzerare), non permette di far ripartire il timer
 }
 
 void Timer::tick() {
     if (!running) return;
 
-    int cent = tempo.getCentesimo_di_secondo() + 1;
-    tempo.set_centesimo_di_secondo(cent);
+    int centesimo = tempo.getCentesimo_di_secondo() + 1;
+    tempo.set_centesimo_di_secondo(centesimo);
     tempo.aggiustavalori();
 }
 

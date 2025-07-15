@@ -24,6 +24,7 @@ std::string Tempo::creastringaformatoesteso() {
 void Tempo::aggiustavalori() {
     if(ore<0||minuti<0||secondi<0||DecimoDiSecondo<0||CentesimoDiSecondo<0)
         throw std::invalid_argument("valori non validi");
+    //meglio mettere questo controllo dato che nel costruttore non era stato fatto nessun altro controllo
     if (CentesimoDiSecondo >= 10) {
             DecimoDiSecondo += CentesimoDiSecondo / 10;
             CentesimoDiSecondo = CentesimoDiSecondo%10;

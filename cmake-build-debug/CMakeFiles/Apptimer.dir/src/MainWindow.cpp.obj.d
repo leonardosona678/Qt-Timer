@@ -2,46 +2,55 @@ CMakeFiles/AppTimer.dir/src/MainWindow.cpp.obj: \
  C:\Users\leona\Desktop\Apptimer\src\MainWindow.cpp \
  C:/Users/leona/Desktop/Apptimer/include/MainWindow.h \
  C:/Users/leona/Desktop/Apptimer/include/Data.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/string \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/requires_hosted.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/stdexcept \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/exception \
  C:/mingw-w64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/pstl/pstl_config.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/stringfwd.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/memoryfwd.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/char_traits.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/postypes.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/cwchar \
- C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/wchar.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/exception.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/version.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/exception_ptr.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/exception_defines.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/cxxabi_init_exception.h \
+ C:/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stddef.h \
+ C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/corecrt.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/_mingw.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/typeinfo \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/hash_bytes.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/new \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/move.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/type_traits \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/nested_exception.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/string \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/requires_hosted.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/stringfwd.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/memoryfwd.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/char_traits.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/bits/postypes.h \
+ C:/mingw-w64/mingw64/include/c++/15.1.0/cwchar \
+ C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/wchar.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/type_traits \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/version.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/allocator.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32/bits/c++allocator.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/new_allocator.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/new \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/exception.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/functexcept.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/exception_defines.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/move.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/cpp_type_traits.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/localefwd.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/clocale \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/locale.h \
- C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/iosfwd \
@@ -76,7 +85,6 @@ CMakeFiles/AppTimer.dir/src/MainWindow.cpp.obj: \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/stl_construct.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/string_view \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/functional_hash.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/hash_bytes.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/string_view.tcc \
  C:/mingw-w64/mingw64/include/c++/15.1.0/ext/string_conversions.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/cstdlib \
@@ -96,8 +104,6 @@ CMakeFiles/AppTimer.dir/src/MainWindow.cpp.obj: \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/basic_string.tcc \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/memory_resource.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/cstddef \
- C:/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stddef.h \
- C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/uses_allocator.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/uses_allocator_args.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/tuple \
@@ -161,11 +167,6 @@ CMakeFiles/AppTimer.dir/src/MainWindow.cpp.obj: \
  C:/Qt/6.9.1/mingw_64/include/QtCore/qforeach.h \
  C:/Qt/6.9.1/mingw_64/include/QtCore/qttypetraits.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/optional \
- C:/mingw-w64/mingw64/include/c++/15.1.0/exception \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/exception_ptr.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/cxxabi_init_exception.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/typeinfo \
- C:/mingw-w64/mingw64/include/c++/15.1.0/bits/nested_exception.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/enable_special_members.h \
  C:/mingw-w64/mingw64/include/c++/15.1.0/variant \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/monostate.h \
@@ -280,7 +281,6 @@ CMakeFiles/AppTimer.dir/src/MainWindow.cpp.obj: \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/locale_classes.tcc \
  C:/mingw-w64/mingw64/include/c++/15.1.0/system_error \
  C:/mingw-w64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32/bits/error_constants.h \
- C:/mingw-w64/mingw64/include/c++/15.1.0/stdexcept \
  C:/mingw-w64/mingw64/include/c++/15.1.0/bits/streambuf.tcc \
  C:/Qt/6.9.1/mingw_64/include/QtCore/q20functional.h \
  C:/Qt/6.9.1/mingw_64/include/QtCore/q20memory.h \
