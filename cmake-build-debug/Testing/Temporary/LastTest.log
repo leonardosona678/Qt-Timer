@@ -1,3 +1,45 @@
-Start testing: Jul 15 16:13 ora legale Europa occidentale
+Start testing: Jul 16 09:47 ora legale Europa occidentale
 ----------------------------------------------------------
-End testing: Jul 15 16:13 ora legale Europa occidentale
+1/1 Testing: RunAllTests
+1/1 Test: RunAllTests
+Command: "C:/Users/leona/Desktop/Apptimer/cmake-build-debug/TestSuite.exe"
+Directory: C:/Users/leona/Desktop/Apptimer/cmake-build-debug
+"RunAllTests" start time: Jul 16 09:47 ora legale Europa occidentale
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\leona\Desktop\Apptimer\external\gtest\googletest-main\googletest\src\gtest_main.cc
+[==========] Running 6 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from TimerTest
+[ RUN      ] TimerTest.TickRespectsRunningFlag
+[       OK ] TimerTest.TickRespectsRunningFlag (0 ms)
+[ RUN      ] TimerTest.ResetClearsTime
+[       OK ] TimerTest.ResetClearsTime (0 ms)
+[----------] 2 tests from TimerTest (0 ms total)
+
+[----------] 2 tests from TempoTest
+[ RUN      ] TempoTest.AdjustValuesCorrectly
+[       OK ] TempoTest.AdjustValuesCorrectly (0 ms)
+[ RUN      ] TempoTest.FormatString
+[       OK ] TempoTest.FormatString (0 ms)
+[----------] 2 tests from TempoTest (0 ms total)
+
+[----------] 2 tests from DataTest
+[ RUN      ] DataTest.ValidDateCreatesString
+[       OK ] DataTest.ValidDateCreatesString (0 ms)
+[ RUN      ] DataTest.InvalidDateThrows
+[       OK ] DataTest.InvalidDateThrows (0 ms)
+[----------] 2 tests from DataTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 3 test suites ran. (0 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.31 sec
+----------------------------------------------------------
+Test Passed.
+"RunAllTests" end time: Jul 16 09:47 ora legale Europa occidentale
+"RunAllTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 16 09:47 ora legale Europa occidentale

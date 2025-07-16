@@ -15,6 +15,11 @@ external/gtest/googletest-main/googlemock/gmock_autogen/timestamp: C:/Program\ F
   C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googlemock/CMakeLists.txt \
   C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googlemock/cmake/gmock.pc.in \
   C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googlemock/cmake/gmock_main.pc.in \
+  C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googlemock/src/gmock-all.cc \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/cmake/win/x64/bin/cmake.exe \
+  C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googlemock/CMakeLists.txt \
+  C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googlemock/cmake/gmock.pc.in \
+  C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googlemock/cmake/gmock_main.pc.in \
   C:/Users/leona/Desktop/Apptimer/external/gtest/googletest-main/googlemock/src/gmock-all.cc
 
 

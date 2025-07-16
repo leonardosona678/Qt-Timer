@@ -57,7 +57,7 @@ void MainWindow::aggiornaDisplay() {
     ui->labelTempo->setText(QString::fromStdString(timerLogico.getTempoinstringaformato2()));
 }
 void MainWindow::mostraDataCorrente() {
-    QDate oggi = QDate::currentDate();
+    QDate oggi = QDate::currentDate(); //funzione statica di Qt che restituisce la data di oggi
 //non ho bisogno di ricontrollare la validità della data, l'ho già fatto nel costruttore
     try {
         Data data(oggi.day(), oggi.month(), oggi.year());

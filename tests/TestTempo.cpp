@@ -9,7 +9,7 @@ TEST(TempoTest, AdjustValuesCorrectly) {
     t.set_centesimo_di_secondo(120);
     t.aggiustavalori();
     EXPECT_EQ(t.getCentesimo_di_secondo(), 0);
-    EXPECT_EQ(t.getDecimo_di_secondo(), 2);
+    EXPECT_EQ(t.getDecimo_di_secondo(), 2); //12 decimi ==1 secondo e 2 decimi
 
     t.set_secondi(119);
     t.aggiustavalori();

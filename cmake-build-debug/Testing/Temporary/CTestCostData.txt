@@ -1,2 +1,2 @@
-RunAllTests 1 0.235284
+RunAllTests 4 0.0775769
 ---

@@ -4,7 +4,7 @@ project(AppTimer)
 
 set(CMAKE_CXX_STANDARD 17)
 
-#  Indica dove si trova Qt sul tuo sistema
+#  Indica dove si trova Qt sul sistema
 set(CMAKE_PREFIX_PATH "C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6")
 
 #  Trova pacchetti Qt
@@ -37,7 +37,6 @@ set(HEADERS
 #  Crea eseguibile
 add_executable(AppTimer ${SOURCES} ${HEADERS} ${UIS})
 
-# Include directory (manuale, visto che automoc/autouic lavora in background)
 target_include_directories(AppTimer PRIVATE include ui)
 
 #  Collega librerie Qt
